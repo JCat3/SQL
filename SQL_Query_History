@@ -57,8 +57,3 @@ CREATE TABLE "Titles" (
 );
 
 select * from "Employees";
-
-select "Employees".emp_no, "Employees".last_name, "Employees".first_name, "Employees".sex, "Salaries".salary
-FROM "Employees"
-left join "Salaries"
-on "Employees".emp_no = "Salaries".emp_no;
